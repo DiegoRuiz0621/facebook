@@ -34,6 +34,15 @@ class MyAdapter(val publicacionList: ArrayList<Publicacion>) : RecyclerView.Adap
             val likes = itemView.findViewById(R.id.likes) as TextView
             val texto = itemView.findViewById(R.id.texto) as TextView
             val comentarios = itemView.findViewById(R.id.comentarios) as TextView
+
+            id.text = publicacion.id.toString()
+            nombre.text = publicacion.nombre.toString()
+            usuario.text = publicacion.usuario.toString()
+            hora.text = publicacion.hora.toString()
+            likes.text = publicacion.likes.toString()
+            texto.text = publicacion.texto.toString()
+            comentarios.text = publicacion.comentarios.toString()
+
         }
     }
 }
