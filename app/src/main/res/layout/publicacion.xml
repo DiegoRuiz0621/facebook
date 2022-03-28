@@ -29,7 +29,6 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"/>
 
-                
 
                 <TextView
                     android:id="@+id/nombre"
@@ -43,9 +42,14 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"/>
 
+                <TextView
+                    android:id="@+id/hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14:54" />
+
 
             </LinearLayout>
-
             <TextView
 
                 android:layout_width="match_parent"
@@ -62,43 +66,50 @@
 
 
     </LinearLayout>
-        <TextView
-            android:id="@+id/id"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:weight="0.3"
+
+                />
 
 
-        <TextView
-            android:id="@+id/usuario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="usuario"
-            />
-        <TextView
-            android:id="@+id/hora"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="hora"
-            />
-        <TextView
-            android:id="@+id/texto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="texto"
-            />
-        <TextView
-            android:id="@+id/likes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="likes"
-            />
-        <TextView
-            android:id="@+id/comentarios"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="comentarios"
-            />
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="texto"
+                android:weight="0.3" />
+
+            <TextView
+                android:id="@+id/usuario"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:text="Enviar" />
+
+            <TextView
+                android:id="@+id/comentarios"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:text="Comentarios" />
+
+            <TextView
+                android:id="@+id/likes"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:text="Likes" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 
